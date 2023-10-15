@@ -167,8 +167,16 @@ footer {
     gap: 2.5rem;
   }
 
+  .lista-nav li {
+    width: max-content;
+  }
+
   main {
     margin: 2rem;
+  }
+
+  .boton-y-checkbox {
+    gap: 2rem;
   }
 
   .contenedor-footer {
