@@ -9,6 +9,8 @@ a {
 
 h2 {
   font-size: var(--font-large);
+  text-align: center;
+  width: max-content;
 }
 
 p {
@@ -185,5 +187,16 @@ footer {
 
   .derechos {
     padding: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .boton-y-checkbox {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .contenedor-footer {
+    padding: 3.35rem;
   }
 }
