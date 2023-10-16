@@ -90,6 +90,11 @@ input[type="password"]:focus-visible {
 }
 
 /* Contenedor de botón registrar y checkbox */
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
 .boton-y-checkbox {
   display: flex;
   align-items: center;
