@@ -148,7 +148,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 21rem;
+  height: 21.4rem;
 }
 
 .footer-container {
@@ -156,7 +156,7 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 75rem;
-  justify-content: center;
+  gap: 3rem;
 }
 
 /* Contenedor de enlaces y logo */
@@ -165,6 +165,7 @@ footer {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
 }
 
 /* Enlaces del footer */
@@ -186,7 +187,6 @@ footer {
 
 /* Texto All rights reserved.. del footer */
 .derechos {
-  padding-top: 2.5rem;
   font-size: var(--font-small);
   font-weight: normal;
 }
@@ -219,6 +219,10 @@ footer {
     text-align: center;
   }
 
+  footer {
+    height: auto;
+  }
+
   .footer-container {
     padding: 5rem;
   }
@@ -228,10 +232,6 @@ footer {
   .boton-y-checkbox {
     flex-direction: column-reverse;
     gap: 2rem;
-  }
-
-  .contenedor-footer {
-    padding: 3.35rem;
   }
   .derechos {
     text-align: center;
