@@ -21,9 +21,15 @@ p {
 /* Header */
 nav {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9rem;
+}
+.nav-container {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 8rem;
+  width: 75rem;
 }
 
 /* Logo */
@@ -38,6 +44,15 @@ nav {
   margin-right: 3rem;
 }
 
+.lista-nav li {
+  padding: 0.7rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.lista-nav li:hover {
+  background-color: var(--primary-color-900);
+}
+
 /*Main */
 
 main {
@@ -46,11 +61,13 @@ main {
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  margin: 2rem auto;
+  margin: 2.25rem auto;
+  text-align: center;
 }
 
 /* Formulario */
 form {
+  text-align: start;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -98,6 +115,7 @@ input[type="password"]:focus-visible {
 .boton-y-checkbox {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 5rem;
 }
 
@@ -108,6 +126,7 @@ input[type="password"]:focus-visible {
   border-style: none;
   padding: 1rem;
   width: fit-content;
+  transition: all 0.3s ease-in-out;
 }
 
 .boton-registrar:hover {
@@ -127,16 +146,25 @@ input[type="password"]:focus-visible {
 /* Footer */
 footer {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 21rem;
+}
+
+.footer-container {
+  display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
+  width: 75rem;
+  justify-content: center;
 }
 
 /* Contenedor de enlaces y logo */
-.contenedor-footer {
+.contenedor-logo-enlaces {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 3.3rem 8rem 2rem 8rem;
 }
 
 /* Enlaces del footer */
@@ -158,14 +186,18 @@ footer {
 
 /* Texto All rights reserved.. del footer */
 .derechos {
+  padding-top: 2.5rem;
   font-size: var(--font-small);
   font-weight: normal;
 }
 
+/* Media queries */
+
 @media (max-width: 768px) {
-  nav {
+  .nav-container {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
   }
 
@@ -184,14 +216,11 @@ footer {
 
   .boton-y-checkbox {
     gap: 2rem;
+    text-align: center;
   }
 
-  .contenedor-footer {
-    padding: 1;
-  }
-
-  .derechos {
-    padding: 1.5rem;
+  .footer-container {
+    padding: 5rem;
   }
 }
 
@@ -203,5 +232,8 @@ footer {
 
   .contenedor-footer {
     padding: 3.35rem;
+  }
+  .derechos {
+    text-align: center;
   }
 }
